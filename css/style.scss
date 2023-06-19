@@ -1,0 +1,353 @@
+@font-face {
+    font-family: 'Bebas Neue';
+    src: local('Bebas Neue'),
+        url(/fonts/BebasNeue-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('Open Sans'),
+        url(/fonts/OpenSans-Bold.ttf);
+}
+
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    
+    outline: none;
+}
+
+:root {
+    outline: none;
+}
+
+.header {
+    min-height: 960px;
+    background: url(../img/bg_header.jpg) no-repeat center;
+    background-size: cover;
+
+    .header_links {
+        display: flex;
+        align-items: center;
+        padding: 22px 0;
+        justify-content: space-between;
+    }
+
+    .nav_links {
+        .link {
+            font-family: 'Open Sans', sans-serif;
+            color: #fff;
+            font-size: 12px;
+            line-height: 1.2em;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 0.05em;
+            text-decoration: none;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .link:hover {
+            background-color: rgba(1, 179, 254, 0);
+            transition: 0.4s;
+            color: #ffb548;
+        }
+
+        .link:not(:last-child) {
+            padding-right: 38px;
+        }
+    }
+
+    .nav_menu {
+        display: flex;
+        align-items: center;
+
+        .menu_language {
+            margin-right: 23px;
+        }
+
+
+    }
+
+}
+
+.vert_line {
+    opacity: 0.5;
+    border: 0.9px solid #FFFFFF;
+    height: 30px;
+}
+
+.dropbtn {
+    padding: 5px;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+
+    .arrow {
+        padding-left: 5px;
+    }
+
+    .text {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 16px;
+        text-align: right;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+}
+
+.dropbtn {
+    color: white;
+    text-decoration: none;
+}
+
+.dropbtn::after {
+    content: "";
+    height: 16px;
+    position: absolute;
+    right: 0;
+    top: 7px;
+    width: 16px;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: white;
+    text-decoration: none;
+    display: block;
+
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    color: #FFB548;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 3px;
+    width: 54.78px;
+
+
+    .text {
+        text-align: left;
+        padding: 5px 0 9px 6px;
+
+    }
+}
+
+.text:hover {
+    color: #FFB548;
+}
+
+.arroww {
+    display: flex;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.platfrom_type {
+    margin-left: 25px;
+
+    img:not(last-child) {
+        margin-right: 17px;
+    }
+}
+
+.header_content {
+    text-align: center;
+    padding: 168px 0 0 0;
+    position: relative;
+
+    .header_headings {
+        color: white;
+        font-family: 'Bebas Neue';
+
+        h1 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 80px;
+            line-height: 96px;
+            text-align: center;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+        h3 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: 2px;
+        }
+    }
+
+    .buy_it {
+        padding-top: 30px;
+
+        button {
+            background: linear-gradient(194.68deg, #FFB548 11.27%, #F3AF34 90.4%);
+            border-radius: 4px;
+            border: 0;
+            width: 260.36px;
+            height: 60px;
+
+            .btn_text {
+                display: flex;
+                font-family: 'Open Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 22px;
+                text-align: center;
+                padding: 17.5px 17.9px 20.5px 16.93px;
+                color: #1A1917;
+                cursor: pointer;
+
+                .line {
+                    opacity: 0.5;
+                    border: 0.873968px solid #1A1917;
+                    transform: matrix(1, 0, 0.04, 1, 0, 0);
+                }
+            }
+        }
+
+        button:hover {
+            box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
+            transition-delay: 0s;
+        }
+    }
+
+    .bottom_nav {
+        padding-top: 400px;
+
+        a {
+            font-family: 'Open Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 22px;
+            text-transform: uppercase;
+            color: #FFFFFF;
+
+            .text {
+                padding-bottom: 8px;
+            }
+
+        }
+
+    }
+}
+
+.section_about {
+    background: url(../img/bg_main1.jpg) no-repeat center;
+    min-height: 960px;
+    background-size: cover;
+    color: white;
+    padding-top: 200px;
+
+    .about_content {
+        display: flex;
+    }
+
+    .about_text {
+        padding-top: 50px;
+    }
+
+    .about_text_header {
+        float: left;
+
+        h3 {
+            font-family: 'Bebas Neue';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 24px;
+            letter-spacing: 2px;
+        }
+
+        h1 {
+            font-family: 'Bebas Neue';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 80px;
+            line-height: 80px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+        }
+
+
+    }
+
+    .about_text_content {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 22px;
+        float: right;
+        text-align: justify;
+        width: 364.85px;
+        padding-right: 39px;
+        padding-top: 60px;
+    }
+
+    .t_line {
+        position: absolute;
+        z-index: 20;
+        width: 800.5px;
+        height: 2.99px;
+        background-color: #fff;
+    }
+
+
+}
+
+swiper-container {
+    width: 502.76px;
+    height: 610.52px;
+
+}
+
+swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6.33344px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.section_features {
+    background: url(../img/bg_main2.jpg) no-repeat center;
+    min-height: 960px;
+    background-size: cover;
+    padding-top: 89px;
+}
+
+
+

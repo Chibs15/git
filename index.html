@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="bootstrap.min.css" />
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header_links">
+                <div class="logo">
+                    <img src="img/logo.png" alt="">
+                </div>
+                <div class="nav_links">
+                    <a href="#" class="link">main</a>
+                    <a href="#" class="link">about</a>
+                    <a href="#" class="link">game features</a>
+                    <a href="#" class="link">system requirements</a>
+                    <a href="#" class="link">quotes</a>
+                </div>
+                <div class="nav_menu">
+                    <div class="menu_language">
+                        <div class="dropdown">
+                            <div class="arroww">
+                                <div class="dropbtn text">ENG</div><img src="img/svg/arrow.svg" alt="" class="arrow">
+                            </div>
+
+                            <div class="dropdown-content">
+                                <a href="#" class="text">FRA</a>
+                                <a href="#" class="text">DEU</a>
+                                <a href="#" class="text">RUS</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vert_line"></div>
+                    <div class="platfroms">
+                        <div class="platfrom_type">
+                            <img src="img/svg/xbox.svg" alt="">
+                            <img src="img/svg/steam.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="header_content">
+                <div class="header_headings">
+                    <h1>SURVIVE AT ALL COSTS</h1>
+                    <h3>Experience new social battle royale game</h3>
+                </div>
+                <div class="buy_it">
+                    <form action="">
+                        <button>
+                            <div class="btn_text">Buy Now on Steam<div class="line"></div>$14.99</div>
+                        </button>
+                    </form>
+                </div>
+                <div class="bottom_nav">
+                    <a href="#about">
+                        <div><span class="text">The story</span></div>
+                        <div><img src="img/svg/scroll_down.svg" alt=""></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="section_about" id="about">
+        <div class="container">
+            <div class="about_content">
+                <div class="about_text">
+                    <div class="about_text_header">
+                        <h3>What is SOS?</h3>
+                        <h1>social battle<BR> royale game</h1>
+                        <div class="t_line"></div>
+                    </div>
+                    <div class="about_text_content">
+                        <span>Each round, you and 15 other contestants compete to
+                            escape a deadly island filled with monsters. The trick is: three people can survive. Will
+                            you run
+                            solo or form friendships with others to escape?
+
+                            Making the right decisions could be the
+                            difference between life and death.</span>
+                    </div>
+                </div>
+                <div class="about_gallery">
+                    <swiper-container class="mySwiper" effect="cards" grab-cursor="true">
+                        <swiper-slide><img src="img/screen1.jpg" alt=""></swiper-slide>
+                        <swiper-slide><img src="img/screen2.jpg" alt=""></swiper-slide>
+                        <swiper-slide><img src="img/screen3.jpg" alt=""></swiper-slide>
+                    </swiper-container>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="section_features">
+        <div class="container">
+
+            <div class="accordion" id="accordionExample">
+
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h2 class="mb-0">
+                            <a class="btn btn-link click d-block" type="button" data-toggle="collapse"
+                                href="#collapseOne" aria-expanded="false">
+                                SURVIVE AT ALL COSTS
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                        data-parent="#accordionExample">
+                        <div class="card-body"> You have 30 minutes to find a relic, signal for extraction, and grab
+                            one of three spots on the rescue chopper.</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingTwo">
+                        <h2 class="mb-0">
+                            <a class="btn btn-link collapsed click d-block" type="button" data-toggle="collapse"
+                                href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                CREATE ALLIES AND ENEMIES
+
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                        <div class="card-body"> Keep your eyes open for footprints and other indicators that help you
+                            stalk your enemies...</div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <h2 class="mb-0">
+                            <a class="btn btn-link collapsed click d-block" type="button" data-toggle="collapse"
+                                href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                IMPRESS THE AUDIENCE
+                            </a>
+                        </h2>
+                    </div>
+                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                        data-parent="#accordionExample">
+                        <div class="card-body">Along with your wits, you will have to equip yourself with various
+                            weapons found on the island. Guns are certainly an option, but melee weapons are just as
+                            deadly.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
